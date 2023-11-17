@@ -4661,7 +4661,7 @@ Transform:
   m_GameObject: {fileID: 665183279}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.95, z: -10}
+  m_LocalPosition: {x: 0.4151, y: -0.9758, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4924,7 +4924,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.041028388, y: -0.018439233}
+  m_Offset: {x: -0.17023805, y: -0.009143591}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4935,7 +4935,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16902445, y: 0.18075585}
+  m_Size: {x: 0.42744368, y: 0.19934714}
   m_EdgeRadius: 0
 --- !u!4 &1062440361
 Transform:
@@ -7557,11 +7557,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.80082
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_LocalScale.z
@@ -7569,11 +7569,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.4
+      value: 0.4151
       objectReference: {fileID: 0}
     - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.95
+      value: -0.9758
       objectReference: {fileID: 0}
     - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7613,11 +7613,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_Size.x
-      value: 0.04735791
+      value: 0.06128508
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
+      propertyPath: m_Size.y
+      value: 0.01573515
       objectReference: {fileID: 0}
     - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_Offset.x
-      value: 0.0041472865
+      value: 0.01884818
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.13727897
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 8989064961418976609, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_Actions
@@ -7627,6 +7643,10 @@ PrefabInstance:
       propertyPath: m_DefaultActionMap
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9184441892050741552, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 286ad53877ffcee4692adb5483ff3b6f, type: 3}
     - target: {fileID: 9184441892050741552, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_SortingOrder
       value: 1
@@ -7876,7 +7896,7 @@ Transform:
   m_GameObject: {fileID: 1459411138}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.95, z: -10}
+  m_LocalPosition: {x: 0.4151, y: -0.9758, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
