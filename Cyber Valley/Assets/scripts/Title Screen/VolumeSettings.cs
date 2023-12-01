@@ -6,8 +6,9 @@ public class VolumeSettings : MonoBehaviour
 {
     [SerializeField] private AudioMixer AudioMixer;
     [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider audioSlider;
 
-    private void PlayMusic()
+    private void Start()
     {
         if(PlayerPrefs.HasKey("musicVolume"))
         {
@@ -16,7 +17,10 @@ public class VolumeSettings : MonoBehaviour
         else
         {
             MusicVolume();
+            AudioVolume();
         }
+
+        
     }
 
     public void MusicVolume()
@@ -26,10 +30,19 @@ public class VolumeSettings : MonoBehaviour
         PlayerPrefs.SetFloat("musicVolume", volume);
     }
 
+    public void AudioVolume()
+    {
+        float volume = audioSlider.value;
+        AudioMixer.SetFloat("ExposedTitleAudio", Mathf.Log10(volume) * 15);
+        PlayerPrefs.SetFloat("audioVolume", volume);
+    }
+
     private void LoadVolume()
     {
         musicSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        audioSlider.value = PlayerPrefs.GetFloat("audioVolume");
 
         MusicVolume();
+        AudioVolume();
     }
 }
