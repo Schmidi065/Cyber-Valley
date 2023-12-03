@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class New_Game : MonoBehaviour
+public class LoadGame : MonoBehaviour
 {
-    public void NewGame()
+    void OnEnable()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(2);
     }
 }
