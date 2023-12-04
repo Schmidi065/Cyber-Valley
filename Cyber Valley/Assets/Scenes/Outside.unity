@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 513d9eb38414a434eab3c9dbb4f413d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 0
+  sceneBuildIndex: 2
   playerPosition: {x: 0.4, y: -0.65}
   playerStorage: {fileID: 11400000, guid: 87e43ca80830764499f74c88d18e113a, type: 2}
 --- !u!61 &725399577
