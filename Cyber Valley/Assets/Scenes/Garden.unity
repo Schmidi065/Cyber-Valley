@@ -4661,7 +4661,7 @@ Transform:
   m_GameObject: {fileID: 665183279}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4151, y: -0.9758, z: -10}
+  m_LocalPosition: {x: 0.4151, y: -0.888, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4890,7 +4890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 2
-  playerPosition: {x: 1.5, y: -0.45}
+  playerPosition: {x: 1.542, y: -0.48}
   playerStorage: {fileID: 11400000, guid: 87e43ca80830764499f74c88d18e113a, type: 2}
 --- !u!61 &1062440360
 BoxCollider2D:
@@ -4946,7 +4946,7 @@ Transform:
   m_GameObject: {fileID: 1062440358}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.25, y: -1.029, z: -0.006570044}
+  m_LocalPosition: {x: 0.219, y: -0.962, z: -0.006570044}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7573,7 +7573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9758
+      value: -0.888
       objectReference: {fileID: 0}
     - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7897,7 +7897,7 @@ Transform:
   m_GameObject: {fileID: 1459411138}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4151, y: -0.9758, z: -10}
+  m_LocalPosition: {x: 0.4151, y: -0.888, z: -10}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
