@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8882cddfd6473a546b05f34b2c386091
+guid: 2fa039e992a12294bbe63a639e8fd7e7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,23 +81,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -123,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CVGewchshausNacht_0
+      name: Alternativer Boden_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,35 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c736e529e8011749af50cc424c38a12
-      internalID: -398699857
+      spriteID: efa0d8ee738de5b43b03102b3643830f
+      internalID: 2115397813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CVGewchshausNacht_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cd06090006be33479b6d0871c618668
-      internalID: 714907926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CVGewchshausNacht_2
+      name: Alternativer Boden_1
       rect:
         serializedVersion: 2
         x: 32
@@ -179,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3dabbd545edf174cb26fd3cd7a7d04b
-      internalID: 1972458199
+      spriteID: 836ea6ec31811cd41b9d2011d3fc0d73
+      internalID: -1894942373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CVGewchshausNacht_3
+      name: Alternativer Boden_2
       rect:
         serializedVersion: 2
         x: 48
@@ -200,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75507172a0df2944d9512506950c51c2
-      internalID: 919964905
+      spriteID: 11ebb78a0854cec4facd872703b6113b
+      internalID: -200205778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CVGewchshausNacht_4
+      name: Alternativer Boden_3
       rect:
         serializedVersion: 2
         x: 0
@@ -221,35 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ae6de46da1db3e46b69952b40d81c21
-      internalID: 1587126807
+      spriteID: aaed6206b8d51dc4bb3b601d08759c46
+      internalID: -865499946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CVGewchshausNacht_5
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 729565f6629dec14ebb08a9f8228064f
-      internalID: 1917991539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CVGewchshausNacht_6
+      name: Alternativer Boden_4
       rect:
         serializedVersion: 2
         x: 32
@@ -263,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67ac9b284302ec04baa058f85a3c69a5
-      internalID: -1804915728
+      spriteID: 97d4000c48a3fbc498deb93821446dbd
+      internalID: 1836779078
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CVGewchshausNacht_7
+      name: Alternativer Boden_5
       rect:
         serializedVersion: 2
         x: 48
@@ -284,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 591eabec3370de046bc1eae491507425
-      internalID: -514025339
+      spriteID: ce80a0d25d3d57d4a8ea7edef413d76f
+      internalID: -979417508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CVGewchshausNacht_8
+      name: Alternativer Boden_6
       rect:
         serializedVersion: 2
         x: 0
@@ -305,56 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74aec7f20db8e4f47b67e64ff8d630d1
-      internalID: 1874358423
+      spriteID: 267ae50e7377d4d41937b66489ee840e
+      internalID: 768961920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CVGewchshausNacht_9
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d34239191a5c1b84ba87b10d5dd8f61a
-      internalID: 1430452866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CVGewchshausNacht_10
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 168ff77e785e6e74bbdfd2a9862f7a3d
-      internalID: -1810330515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CVGewchshausNacht_11
+      name: Alternativer Boden_7
       rect:
         serializedVersion: 2
         x: 48
@@ -368,77 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b6e751d7f741cc4c99508ddd2b451c1
-      internalID: -586627373
+      spriteID: 93d07bb4a8f534e4c99616eed6b00a31
+      internalID: -575113762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CVGewchshausNacht_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7976ad3680f0c2843ba068cdf0426412
-      internalID: 982515819
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CVGewchshausNacht_13
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a408543d08d76e24999f0c8013ca06d0
-      internalID: 628232790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CVGewchshausNacht_14
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e48f8f69d408444a8a6e433fe48ffcd
-      internalID: -1569706273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CVGewchshausNacht_15
+      name: Alternativer Boden_8
       rect:
         serializedVersion: 2
         x: 48
@@ -452,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dad5e7a031671f4aa44e80f9f530323
-      internalID: -133580831
+      spriteID: a6dbd07bdde531b44aa835a13abcc6d6
+      internalID: 668532872
       vertices: []
       indices: 
       edges: []
@@ -469,22 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CVGewchshausNacht_0: -398699857
-      CVGewchshausNacht_1: 714907926
-      CVGewchshausNacht_10: -1810330515
-      CVGewchshausNacht_11: -586627373
-      CVGewchshausNacht_12: 982515819
-      CVGewchshausNacht_13: 628232790
-      CVGewchshausNacht_14: -1569706273
-      CVGewchshausNacht_15: -133580831
-      CVGewchshausNacht_2: 1972458199
-      CVGewchshausNacht_3: 919964905
-      CVGewchshausNacht_4: 1587126807
-      CVGewchshausNacht_5: 1917991539
-      CVGewchshausNacht_6: -1804915728
-      CVGewchshausNacht_7: -514025339
-      CVGewchshausNacht_8: 1874358423
-      CVGewchshausNacht_9: 1430452866
+      Alternativer Boden_0: 2115397813
+      Alternativer Boden_1: -1894942373
+      Alternativer Boden_2: -200205778
+      Alternativer Boden_3: -865499946
+      Alternativer Boden_4: 1836779078
+      Alternativer Boden_5: -979417508
+      Alternativer Boden_6: 768961920
+      Alternativer Boden_7: -575113762
+      Alternativer Boden_8: 668532872
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
