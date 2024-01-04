@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter; 
     public VectorValue startingPosition;
+   
+    Vector2 MotionVector;
+    public Vector2 lastMotionVector;
 
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -25,6 +28,10 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+     float Horizontal = Input.GetAxisRaw("Horizontal");
+     float Vertical =  Input.GetAxisRaw("Vertical");
+
         // If movement input is not 0, try to move
         if ( movementInput != Vector2.zero ) {
             bool success = TryMove(movementInput);
@@ -38,6 +45,20 @@ public class PlayerController : MonoBehaviour
             }
 
         }
+        //motion Vector for other scripts
+        MotionVector = new Vector2(
+            Horizontal,
+            Vertical
+            );
+
+        if (Horizontal != 0 || Vertical != 0)
+        {
+            lastMotionVector = new Vector2(
+              Horizontal,
+              Vertical  
+            ).normalized;
+        }
+
     }
 
     private bool TryMove(Vector2 direction) {
