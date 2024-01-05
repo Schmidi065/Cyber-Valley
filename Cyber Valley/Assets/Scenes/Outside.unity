@@ -1349,18 +1349,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2937030684930515967, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.25
       objectReference: {fileID: 0}
@@ -1404,47 +1392,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_Size.x
-      value: 0.06285183
-      objectReference: {fileID: 0}
-    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_Size.y
-      value: 0.013362706
-      objectReference: {fileID: 0}
-    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.019045286
-      objectReference: {fileID: 0}
-    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.13766202
-      objectReference: {fileID: 0}
-    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 5405307121605294240, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 8989064961418976609, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: bc49995e6b6660d4f80aa7d1802ffff7, type: 3}
-    - target: {fileID: 8989064961418976609, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_DefaultActionMap
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9184441892050741552, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 286ad53877ffcee4692adb5483ff3b6f, type: 3}
-    - target: {fileID: 9184441892050741552, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 323868535794454559, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
+    - {fileID: 7612488849970368991, guid: 318bcb640217fe54da97e0b6c7b3e6ad, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
