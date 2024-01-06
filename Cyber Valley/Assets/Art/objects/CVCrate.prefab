@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8718078533552148792}
   - component: {fileID: 2818526191855945528}
-  - component: {fileID: 8783761744589927057}
   - component: {fileID: 9040587568952351343}
+  - component: {fileID: 5379267566332274084}
   - component: {fileID: 8655914901205532437}
   m_Layer: 0
   m_Name: CVCrate
@@ -87,21 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8783761744589927057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2858823610857228729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50790580a8ec2714e833e910c4f1ac85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickUpDrop: {fileID: 7151520377824518213, guid: e3d9fc5910037e0499d9cc703248e84a, type: 3}
-  dropCount: 5
-  spread: 0.2
 --- !u!61 &9040587568952351343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,6 +132,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.642266}
   m_EdgeRadius: 0
+--- !u!114 &5379267566332274084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2858823610857228729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c5465c4a4779746b8293f18add2396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceDrops:
+  - resourcePrefab: {fileID: 7151520377824518213, guid: e3d9fc5910037e0499d9cc703248e84a, type: 3}
+    dropCount: 5
+  - resourcePrefab: {fileID: 1692357914188276074, guid: 96cc56afffddb0d409ba659ec239287f, type: 3}
+    dropCount: 3
+  spread: 0.3
 --- !u!114 &8655914901205532437
 MonoBehaviour:
   m_ObjectHideFlags: 0
