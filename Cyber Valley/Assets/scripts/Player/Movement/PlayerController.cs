@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter; 
     public VectorValue startingPosition;
+    public static PlayerController instance;
    
     Vector2 MotionVector;
     public Vector2 lastMotionVector;
@@ -24,6 +25,18 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         transform.position = startingPosition.initialValue;
+    }
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void FixedUpdate()
