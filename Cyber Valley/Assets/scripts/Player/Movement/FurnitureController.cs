@@ -1,34 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FurnitureController : MonoBehaviour
 {
-    private Transform playerTransform;
-    private SpriteRenderer furnitureRenderer;
-    private SpriteRenderer playerRenderer;
+    private SpriteRenderer spriteRenderer;
+    private Collider2D furnitureCollider;
 
-    private void Start()
+    void Start()
     {
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        furnitureRenderer = GetComponent<SpriteRenderer>();
-        playerRenderer = playerTransform.GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        furnitureCollider = GetComponent<Collider2D>();
+    }
 
-        if (playerRenderer == null || furnitureRenderer == null)
+    void Update()
+    {
+        // Beispiel: Möbelstück vor dem Charakter
+        if (PlayerIsInFrontOfFurniture())
         {
-            Debug.LogError("SpriteRenderer component not found on Player or Furniture.");
+            // Setze die Rendering Order des Möbelstücks höher als die des Charakters
+            spriteRenderer.sortingOrder = 1;
+        }
+        // Beispiel: Möbelstück hinter dem Charakter
+        else
+        {
+            // Setze die Rendering Order des Möbelstücks niedriger als die des Charakters
+            spriteRenderer.sortingOrder = -1;
         }
     }
 
-    private void Update()
+    bool PlayerIsInFrontOfFurniture()
     {
-        if (playerTransform.position.y < transform.position.y)
+        if (PlayerController.instance != null)
         {
-            // Spieler ist unter dem Möbel, also setze den Spieler über das Möbel
-            playerRenderer.sortingOrder = furnitureRenderer.sortingOrder + 1;
+            float playerBottomY = PlayerController.instance.GetComponent<Collider2D>().bounds.min.y;
+            float furnitureTopY = furnitureCollider.bounds.max.y;
+
+            // Überprüfen Sie, ob der Spieler unter dem Möbelstück steht (niedrigere Y-Position)
+            return playerBottomY > furnitureTopY;
         }
         else
         {
-            // Spieler ist über dem Möbel, setze den Spieler unter das Möbel
-            playerRenderer.sortingOrder = furnitureRenderer.sortingOrder - 1;
+            return false;
         }
     }
 }
