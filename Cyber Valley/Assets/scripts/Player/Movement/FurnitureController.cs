@@ -1,39 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FurnitureController : MonoBehaviour
 {
-    private SpriteRenderer spriteRenderer;
+    private Transform playerTransform;
+    private SpriteRenderer furnitureRenderer;
+    private SpriteRenderer playerRenderer;
 
-    void Start()
+    private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        furnitureRenderer = GetComponent<SpriteRenderer>();
+        playerRenderer = playerTransform.GetComponent<SpriteRenderer>();
+
+        if (playerRenderer == null || furnitureRenderer == null)
+        {
+            Debug.LogError("SpriteRenderer component not found on Player or Furniture.");
+        }
     }
 
-    void Update()
+    private void Update()
     {
-        // Beispiel: Möbelstück vor dem Charakter
-        if (PlayerIsInFrontOfFurniture())
+        if (playerTransform.position.y < transform.position.y)
         {
-            // Setze die Rendering Order des Möbelstücks höher als die des Charakters
-            spriteRenderer.sortingOrder = 1;
+            // Spieler ist unter dem Möbel, also setze den Spieler über das Möbel
+            playerRenderer.sortingOrder = furnitureRenderer.sortingOrder + 1;
         }
-        // Beispiel: Möbelstück hinter dem Charakter
         else
         {
-            // Setze die Rendering Order des Möbelstücks niedriger als die des Charakters
-            spriteRenderer.sortingOrder = -1;
+            // Spieler ist über dem Möbel, setze den Spieler unter das Möbel
+            playerRenderer.sortingOrder = furnitureRenderer.sortingOrder - 1;
         }
-    }
-
-    bool PlayerIsInFrontOfFurniture()
-    {
-        // Holen Sie die Y-Positionen von Spieler und Möbelstück
-        float playerY = PlayerController.instance.transform.position.y;
-        float furnitureY = transform.position.y;
-
-        // Überprüfen Sie, ob der Spieler vor dem Möbelstück steht (höhere Y-Position)
-        return playerY > furnitureY;
     }
 }
