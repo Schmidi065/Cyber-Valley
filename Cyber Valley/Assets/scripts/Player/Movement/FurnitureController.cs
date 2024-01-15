@@ -5,10 +5,12 @@ using UnityEngine;
 public class FurnitureController : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
+    private Collider2D furnitureCollider;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        furnitureCollider = GetComponent<Collider2D>();
     }
 
     void Update()
@@ -29,11 +31,17 @@ public class FurnitureController : MonoBehaviour
 
     bool PlayerIsInFrontOfFurniture()
     {
-        // Holen Sie die Y-Positionen von Spieler und Möbelstück
-        float playerY = PlayerController.instance.transform.position.y;
-        float furnitureY = transform.position.y;
+        if (PlayerController.instance != null)
+        {
+            float playerBottomY = PlayerController.instance.GetComponent<Collider2D>().bounds.min.y;
+            float furnitureTopY = furnitureCollider.bounds.max.y;
 
-        // Überprüfen Sie, ob der Spieler vor dem Möbelstück steht (höhere Y-Position)
-        return playerY > furnitureY;
+            // Überprüfen Sie, ob der Spieler unter dem Möbelstück steht (niedrigere Y-Position)
+            return playerBottomY > furnitureTopY;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
