@@ -6,8 +6,8 @@ public class ToolsCharacterController : MonoBehaviour
 {
     PlayerController Player;
     Rigidbody2D rgbd2d;
-    [SerializeField] float offsetDistance = 1f;
-    [SerializeField] float sizeOfInteractableArea = 1.2f;
+    [SerializeField] float offsetDistance = 0.1f;
+    [SerializeField] float sizeOfInteractableArea = 0.1f;
 
     private void Awake()
     {
@@ -40,3 +40,5 @@ public class ToolsCharacterController : MonoBehaviour
         }
     }
 }
+
+
