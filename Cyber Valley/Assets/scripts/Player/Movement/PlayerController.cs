@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public ContactFilter2D movementFilter; 
     public VectorValue startingPosition;
     public static PlayerController instance;
+
+    Animator animator;
    
     Vector2 MotionVector;
     public Vector2 lastMotionVector;
@@ -29,6 +31,8 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        animator = GetComponent<Animator>();
+
         if (instance == null)
         {
             instance = this;
@@ -44,6 +48,9 @@ public class PlayerController : MonoBehaviour
 
      float Horizontal = Input.GetAxisRaw("Horizontal");
      float Vertical =  Input.GetAxisRaw("Vertical");
+
+     animator.SetFloat("horizontal", Input.GetAxisRaw("Horizontal"));
+     animator.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
 
         // If movement input is not 0, try to move
         if ( movementInput != Vector2.zero ) {
@@ -71,7 +78,6 @@ public class PlayerController : MonoBehaviour
               Vertical  
             ).normalized;
         }
-
     }
 
     private bool TryMove(Vector2 direction) {
