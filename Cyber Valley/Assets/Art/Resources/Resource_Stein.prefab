@@ -48,6 +48,8 @@ MonoBehaviour:
   speed: 0.5
   pickUpDistance: 0.3
   ttl: 10
+  item: {fileID: 11400000, guid: a452a6d173a039b4a8399b485fe7f432, type: 2}
+  count: 1
 --- !u!1 &5456591287200783826
 GameObject:
   m_ObjectHideFlags: 0
