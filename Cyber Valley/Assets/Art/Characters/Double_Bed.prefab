@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 6237050114800336434}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.71255475, y: 0.428622, z: -0.09535339}
+  m_LocalPosition: {x: -0.71255475, y: 0.428622, z: -0.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 7280088922642928656}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5535548, y: 0.428622, z: -0.09535339}
+  m_LocalPosition: {x: -0.5535548, y: 0.428622, z: -0.97}
   m_LocalScale: {x: 1.1083, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 1692657384786204954}
   - component: {fileID: 246875419126129384}
   - component: {fileID: 5185993357229383639}
+  - component: {fileID: 8670744768858397794}
   m_Layer: 0
   m_Name: Bed_Texture_1 (1)
   m_TagString: Untagged
@@ -231,8 +232,8 @@ Transform:
   m_GameObject: {fileID: 7743915622555648515}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.71255475, y: 0.24882564, z: -0.09535339}
-  m_LocalScale: {x: 1.1083, y: 1.5, z: 1}
+  m_LocalPosition: {x: -0.71255475, y: 0.24882564, z: 0.1}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5784663739032417510}
@@ -277,7 +278,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 256057578, guid: 13916390d47e1c44f83498471a6e385c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -346,6 +347,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.02201763}
   m_EdgeRadius: 0
+--- !u!114 &8670744768858397794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7743915622555648515}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1186bb5bb602745ade8af46fe12ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stationary: 1
 --- !u!1 &8390125456789019873
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,8 +370,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3357962025142929829}
   - component: {fileID: 2609273279667910730}
-  - component: {fileID: 5619113312409405874}
   - component: {fileID: 6843007536554973413}
+  - component: {fileID: 8987104686587301658}
+  - component: {fileID: 1382360913502576703}
   m_Layer: 0
   m_Name: Bed_Texture_1
   m_TagString: Untagged
@@ -374,7 +389,7 @@ Transform:
   m_GameObject: {fileID: 8390125456789019873}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5535548, y: 0.24882564, z: -0.09535339}
+  m_LocalPosition: {x: -0.5535548, y: 0.24882564, z: 0.1}
   m_LocalScale: {x: 1.1083, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -420,7 +435,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 256057578, guid: 13916390d47e1c44f83498471a6e385c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -432,18 +447,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5619113312409405874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8390125456789019873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ebe4979274338a4585709919cf9cd34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &6843007536554973413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -489,3 +492,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.022017628}
   m_EdgeRadius: 0
+--- !u!114 &8987104686587301658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8390125456789019873}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1186bb5bb602745ade8af46fe12ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stationary: 1
+--- !u!114 &1382360913502576703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8390125456789019873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ebe4979274338a4585709919cf9cd34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour
     public static PlayerController instance;
 
     Animator animator;
-   
+    public bool moving;
+
     Vector2 MotionVector;
     public Vector2 lastMotionVector;
 
@@ -46,11 +47,11 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
 
-     float Horizontal = Input.GetAxisRaw("Horizontal");
-     float Vertical =  Input.GetAxisRaw("Vertical");
+     float horizontal = Input.GetAxisRaw("Horizontal");
+     float vertical =  Input.GetAxisRaw("Vertical");
 
-     animator.SetFloat("horizontal", Input.GetAxisRaw("Horizontal"));
-     animator.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
+     animator.SetFloat("horizontal", horizontal);
+     animator.SetFloat("vertical", vertical);
 
         // If movement input is not 0, try to move
         if ( movementInput != Vector2.zero ) {
@@ -67,16 +68,22 @@ public class PlayerController : MonoBehaviour
         }
         //motion Vector for other scripts
         MotionVector = new Vector2(
-            Horizontal,
-            Vertical
+            horizontal,
+            vertical
             );
 
-        if (Horizontal != 0 || Vertical != 0)
+        moving = horizontal != 0 || vertical != 0;
+        animator.SetBool("moving", moving);
+
+        if (horizontal != 0 || vertical != 0)
         {
             lastMotionVector = new Vector2(
-              Horizontal,
-              Vertical  
+              horizontal,
+              vertical  
             ).normalized;
+
+            animator.SetFloat("lasthorizontal", horizontal);
+            animator.SetFloat("lastvertical", vertical);
         }
     }
 
