@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3395357190330971759}
   - component: {fileID: 2962173191648215634}
   - component: {fileID: 495597757265205012}
+  - component: {fileID: 6615456215246404604}
   m_Layer: 0
   m_Name: ChestObject
   m_TagString: Untagged
@@ -95,6 +96,19 @@ MonoBehaviour:
   closedChest: {fileID: 2880978950961944703}
   openedChest: {fileID: 9083222629863605163}
   opened: 0
+--- !u!114 &6615456215246404604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2603155825701875301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1186bb5bb602745ade8af46fe12ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stationary: 1
 --- !u!1 &2880978950961944703
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,6 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 155764713440672008}
   - component: {fileID: 33115407824397080}
+  - component: {fileID: 8921017519000458317}
   m_Layer: 0
   m_Name: closedChest
   m_TagString: Untagged
@@ -122,7 +137,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3395357190330971759}
@@ -179,6 +194,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8921017519000458317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2880978950961944703}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1186bb5bb602745ade8af46fe12ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stationary: 1
 --- !u!1 &9083222629863605163
 GameObject:
   m_ObjectHideFlags: 0
