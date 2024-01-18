@@ -6,7 +6,7 @@ public class TeleportationZone : MonoBehaviour
 
     private void Awake()
     {
-        audioMNG = GameObject.FindGameObjectWithTag("Sounds").GetComponent<AudioMNG>();
+        //  audioMNG = GameObject.FindGameObjectWithTag("Sounds").GetComponent<AudioMNG>();
     }
     // Die Zielposition, zu der der Spieler teleportiert werden soll
     public Vector2 targetPosition;
@@ -14,7 +14,7 @@ public class TeleportationZone : MonoBehaviour
     // Wird aufgerufen, wenn ein Collider mit dem Teleportationsbereich in Berührung kommt
     private void OnTriggerEnter2D(Collider2D other)
     {
-        audioMNG.PlaySFX(audioMNG.door);
+        //  audioMNG.PlaySFX(audioMNG.door);
         // Überprüfe, ob der Kollisionspartner der Spieler ist
         if (other.CompareTag("Player"))
         {
