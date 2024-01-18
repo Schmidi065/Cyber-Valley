@@ -1,13 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioMNG : MonoBehaviour
 {
     [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource FXSource;
+    [SerializeField] AudioSource FXsource;
 
     public AudioClip background;
-    public AudioClip door;
     public AudioClip walk;
+    public AudioClip door;
 
     private void Start()
     {
@@ -15,8 +17,8 @@ public class AudioMNG : MonoBehaviour
         musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlayFX(AudioClip clip)
     {
-        FXSource.PlayOneShot(clip);
+        FXsource.PlayOneShot(clip);
     }
 }
