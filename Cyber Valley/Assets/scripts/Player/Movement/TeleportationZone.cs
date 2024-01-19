@@ -6,7 +6,7 @@ public class TeleportationZone : MonoBehaviour
 
     private void Awake()
     {
-        audioMNG = GameObject.FindGameObjectWithTag("Sounds").GetComponent<AudioMNG>();
+       // audioMNG = GameObject.FindGameObjectWithTag("Sounds").GetComponent<AudioMNG>();
     }
 
     // Die Zielposition, zu der der Spieler teleportiert werden soll
@@ -18,7 +18,7 @@ public class TeleportationZone : MonoBehaviour
         // Überprüfe, ob der Kollisionspartner der Spieler ist
         if (other.CompareTag("Player"))
         {
-            audioMNG.PlayFX(audioMNG.door);
+           // audioMNG.PlayFX(audioMNG.door);
 
             // Setze die Rigidbody2D-Komponente des Spielers auf eine vorübergehende kinematische Einstellung,
             // um ihn zu teleportieren, ohne dass er durch die Schwerkraft beeinflusst wird
